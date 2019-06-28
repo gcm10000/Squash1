@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebPlayer - Squash</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            background-color: #F5F5F5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .header {
+            width: 100%;
+            float: left;
+            padding: 3% 4%;
+            margin-bottom: 2%;
+            background-color: #F9F9F9;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 4;
+        }
+
+        .header .logo {
+            float: left;
+            width: 56px;
+            height: 56px;
+            margin-left: 25%;
+            background: url('../images/logo.png') center center no-repeat;
+            font-size: 0px;
+            border-radius: 50%;
+        }
+        .header .inputsearch {
+            display: none;
+            float: left;
+            margin-top: 2%;
+            margin-left: 6.5%;
+            padding: 4%;
+            width: 60%;
+        }
+
+        .header .btn-menu {
+            font-size: 44px;
+            float: left;
+        }
+        .header .btn-closesearch {
+            display: none;
+            font-size: 44px;
+            float: left;
+        }
+        nav.menu {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 4;
+        }
+        nav .btn-close{
+            font-size: 3em;
+            color: #fff;
+            float: right;
+            cursor: pointer;
+            margin-top: 7%;
+            margin-right: 5%;
+        }
+        nav ul {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        nav ul li {
+            padding: 4%;
+        }
+        nav ul li a {
+            color: #FFF;
+            font-size: 1.5em;
+            padding: 3px;
+        }
+        nav ul li a:hover {
+            border: 1px solid rgb(0, 80, 230);
+        }
+        .header a {
+            color: #000;
+        }
+        .header .btn-search {
+            font-size: 44px;
+            float: right;
+        }
+        .about {
+            
+        }
+        .section {
+            margin-top: 85px;
+            width: 100%;
+            float: left;
+        }
+        .section p {
+            background: #fff;
+            margin-bottom: 4%;
+            padding: 10px 0px 10px 25px;
+            cursor: pointer;
+        }
+        .section p:hover {
+            background: #FCFCFC;
+        }
+        .section p button {
+            background: #F0F0F0;
+            float: left;
+            position: absolute;
+            margin-top: 5px;
+            cursor: pointer;
+            padding: 4px 4px 4px 6px;
+            border-radius: 50%;
+        }
+        .section span {
+            padding-left: 50px;
+        }
+        .section .name a {
+            color: #000;
+            font-weight: bold;
+        }
+        .section .artist {
+            display:block;
+            font-size: 12px;
+        }
+        .section .artist a{
+            color: #000;
+        }
+        .section .artist a:hover {
+            display:block;
+            text-decoration: underline;
+        }
+        .playerbar {
+            background: #A0A0A0;
+            float: left;
+            width: 100%;
+            padding: 7%;
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="btn-menu"><a href="#"><i class="fa fa-bars"></i></a></div>
+        <div class="btn-closesearch"><a href="#"><i class="fa fa-times"></i></a></div>
+        <a href="home.html"><h1 class="logo">Squash - Músicas descentralizadas.</h1></a>
+        <input type="text" name="search" class="inputsearch" />
+        <div class="btn-search"><a href="#"><i class="fa fa-search"></i></a></div>
+    </header>
+    <nav class="menu">
+        <a class="btn-close"><i class="fa fa-times"></i></a>
+        <ul>
+            <!--<li><a href="#">Pesquisar Música</a></li>-->
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li><a href="#">Ouvidas Recentemente</a></li>
+            <li><a href="#">Conectar ao Dispositivo</a></li>
+            <li><a href="#">Meu Perfil</a></li>
+        </ul>
+    </nav>
+    <!--Sessão sobre a música-->
+    <section class="about">
+
+    </section>
+    <section class="section">
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Otherside</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Scar Tissue</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+    </section>
+    <footer class="playerbar">PLAY/PAUSE</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".btn-menu").click(function () {
+            $(".menu").show();
+        });
+
+        $(".btn-close").click(function () {
+            $(".menu").hide();
+        });
+        $(".btn-search").click(function () {
+            $(".btn-menu").hide();
+            $(".logo").hide();
+            $(".inputsearch").show();
+            $(".btn-closesearch").show();
+        });
+        $(".btn-closesearch").click(function () {
+            $(".btn-menu").show();
+            $(".logo").show();
+            $(".inputsearch").hide();
+            $(".btn-closesearch").hide();
+        });
+    </script>
+</body>
+</html>

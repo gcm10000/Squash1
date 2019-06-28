@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Squash</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="~/css/Dynamic.css" rel="stylesheet" />
+    <link href="~/css/search.css"  rel="stylesheet" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="btn-menu"><a href="#"><i class="fa fa-bars"></i></a></div>
+        <div class="btn-closesearch"><a href="#"><i class="fa fa-times"></i></a></div>
+        <a href="/"><h1 class="logo">Squash - Músicas descentralizadas.</h1></a>
+        <input id="inputsearch" type="text" name="search" style="display: none;" class="inputsearch" />
+        <button class="btn-search"><i class="fa fa-search"></i></button>
+    </header>
+    <nav class="menu">
+        <a class="btn-close"><i class="fa fa-times"></i></a>
+        <ul>
+            <!--<li><a href="#">Pesquisar Música</a></li>-->
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li><a href="#">Ouvidas Recentemente</a></li>
+            <li><a href="#">Conectar ao Dispositivo</a></li>
+            <li><a href="#">Meu Perfil</a></li>
+        </ul>
+    </nav>
+    <!--Sessão sobre a música-->
+    <div id="content">
+        @RenderBody()
+        <!--<tracks class="about"></tracks>
+        <tracks class="tracks">
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Otherside</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Scar Tissue</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+            <p><button class="fa fa-play"></button><span class="name"><a href="#">Californication</a></span><span class="artist"><a href="#">Red Hot Chilli Peppers</a></span></p>
+        </tracks>-->
+    </div>
+    <!--Fim sessão sobre a música-->
+    <footer class="playerbar">
+        <div class="bar">
+            <button name="step-backward" class="backward">Voltar</button>
+            <button name="Pause" class="play" id="play">Pause</button>
+            <button name="step-forward" class="forward">Avançar</button>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".btn-menu").click(function () {
+            $(".menu").show();
+        });
+
+        $(".btn-close").click(function () {
+            $(".menu").hide();
+        });
+    </script>
+    <script type="text/javascript" src="~/js/search.js"></script>
+    <script type="text/javascript" src="~/js/play.js"></script>
+</body>
+</html>

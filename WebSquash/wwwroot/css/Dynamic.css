@@ -1,0 +1,350 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    margin-bottom: 2%;
+    background-color: #F9F9F9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.header .logo {
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin-left: 25%;
+    background: url('../images/logo.png') center center no-repeat;
+    font-size: 0px;
+    border-radius: 50%;
+}
+
+.header .inputsearch {
+    display: none;
+    float: left;
+    margin-top: 2%;
+    margin-left: 6.5%;
+    padding: 4%;
+    width: 60%;
+}
+
+.header .btn-menu {
+    font-size: 44px;
+    float: left;
+}
+
+.header .btn-closesearch {
+    display: none;
+    font-size: 44px;
+    float: left;
+}
+
+nav.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+nav .btn-close {
+    font-size: 3em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-top: 7%;
+    margin-right: 5%;
+}
+
+nav ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 4%;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-size: 1.5em;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    border: 1px solid rgb(0, 80, 230);
+}
+
+.header a {
+    color: #000;
+}
+
+.header .btn-search {
+    font-size: 44px;
+    float: right;
+    cursor: pointer;
+    background: none !important;
+}
+
+.main {
+    margin-top: 23%;
+    background-color: #DEDEDE;
+    padding-bottom: 15px;
+    margin-bottom: 3%;
+}
+
+.main h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5em;
+    margin-bottom: 4%;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.main .content .image {
+    background: url('/images/png/user.png') center center no-repeat;
+    float: left;
+    width: 64px;
+    height: 64px;
+    font-size: 0px;
+    border-radius: 50%;
+}
+
+ .content {
+    margin-left: 6%;
+    margin-bottom: 6%;
+    height: 100%;
+}
+
+.content p {
+    padding-left: 30%;
+    color: #fff;
+}
+
+.main .content .titleMain a {
+    font-weight: bold;
+}
+
+.main .content .subtitleMain {
+    font-size: 12px;
+}
+
+.main .content .subtitleMain a:hover {
+    text-decoration: underline;
+}
+
+
+.main .content a {
+    color: #fff;
+}
+
+.nomain {
+    background-color: #DEDEDE;
+    padding-top: 7px;
+    padding-bottom: 15px;
+    margin-bottom: 3%;
+}
+
+.nomain .content .image {
+    background: url('/images/png/user.png') center center no-repeat;
+    float: left;
+    width: 64px;
+    height: 64px;
+    font-size: 0px;
+    border-radius: 50%;
+}
+
+.nomain .content .titlenoMain a {
+    font-weight: bold;
+}
+
+.nomain .content .subtitlenoMain {
+    font-size: 12px;
+}
+
+.nomain .content .subtitlenoMain a:hover {
+    text-decoration: underline;
+}
+
+.nomain .content a {
+    color: #fff;
+}
+
+.about {
+}
+
+.album {
+    margin-top: 23%;
+    background-color: #DEDEDE;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.info {
+    margin-top: 7px;
+}
+.info a { color: #000;}
+.info a:hover { text-decoration: underline;}
+
+.center {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    
+}
+
+.imageAlbum {
+    background: url('/images/png/user.png') no-repeat center center;
+    width: 270px;
+    height: 270px;
+    font-size: 0px;
+    border-radius: 3%;
+}
+
+#artist {font-weight: bold;}
+#album { font-size: 0.9em; }
+
+#year { font-size: 0.8em; }
+
+.tracks {
+    margin-top: 4%;
+    width: 100%;
+    float: left;
+}
+
+.tracks p {
+    background: #fff;
+    margin-bottom: 4%;
+    padding: 10px 0px 10px 25px;
+}
+
+.tracks p:hover {
+    background: #FCFCFC;
+}
+
+.tracks p button {
+    background: #F0F0F0;
+    float: left;
+    position: absolute;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 4px 4px 4px 6px;
+    border-radius: 50%;
+}
+
+.tracks p button:hover {
+    background: #E3E3E3;
+}
+
+
+.tracks span {
+    padding-left: 50px;
+}
+
+.tracks .name a {
+    color: #000;
+    font-weight: bold;
+}
+
+.tracks .artist {
+    display: block;
+    font-size: 12px;
+}
+
+.tracks .artist a {
+    color: #000;
+}
+
+.tracks .artist a:hover {
+    display: block;
+    text-decoration: underline;
+}
+
+.playerbar {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFDE3B;
+}
+
+.playerbar .bar {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  display: block;
+  border: 3px solid #0A00FF;
+  border-radius: 10px;
+  padding: 10px;
+}
+.playerbar .bar button {
+  cursor: pointer;
+  font-size: 0px;
+  margin-left: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.playerbar .bar button:hover {
+    background-color: #DCDCDC;
+}
+
+.playerbar .bar .play {
+  background: url('/svg/media-play.svg') center center no-repeat;
+  background-color: #fff;
+  background-size: 12px;
+
+}
+
+.playerbar .bar .backward {
+  background: url('/svg/media-step-backward.svg') center center no-repeat;
+  background-color: #fff;
+  background-size: 10px;
+
+}
+
+.playerbar .bar .forward {
+  background: url('/svg/media-step-forward.svg') center center no-repeat;
+  background-color: #fff;
+  background-size: 10px;
+
+}

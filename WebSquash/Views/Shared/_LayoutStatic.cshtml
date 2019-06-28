@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Squash</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    @RenderSection("logincss", required: false)
+    <link href="~/css/static.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="header">
+        <a href="/"><h1 class="logo">Squash - Músicas descentralizadas.</h1></a>
+        <button onclick="location = '/Login'" class="btn-login">Login</button>
+    </header>
+    @RenderBody()
+    <footer class="footer">
+        <h1 class="logo" style="line-height: 2.5;">Squash 2019</h1>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="copyright">Sem direitos reservados.</p>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("/js/login.js")"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Tocar Música";
+    //AQUI TOCARÁ AS MÚSICAS
+    var array = ViewData["Tracks"] as IEnumerable<InfoAlbum.Track>;
+    List<InfoAlbum.Track> tracks = new List<InfoAlbum.Track>(array);
+}
+
+<section class="album">
+    <div class="center">
+        <div class="imageAlbum" style="background-image: url('@ViewData["Image"]');"></div>
+    </div>
+    <div class="info">
+        <p class="center"><a id="artist" href="#artist">@ViewData["Artist"]</a></p>
+        <p class="center"><a id="album" href="/Play/Music/@ViewData["Artist"]/@ViewData["Album"]">@ViewData["Album"]</a></p>
+    </div>
+    <!--Button Tocar ordenadamente-->
+</section>
+
+<section class="tracks">
+    @foreach (var item in tracks)
+    {
+        <p><button data-duration="@item.duration" id="btnPlay-@tracks.IndexOf(item)" class="fa fa-play"></button><span class="name"><a href="#">@item.name</a></span><span class="artist"><a href="#">@item.artist.name</a></span></p>
+    }
+</section>

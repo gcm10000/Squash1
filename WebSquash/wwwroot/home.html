@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PageTest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            background-color: #F5F5F5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .header {
+            width: 100%;
+            float: left;
+            padding: 3% 4%;
+            margin-bottom: 2%;
+            background-color: #F9F9F9;
+        }
+
+            .header .btn-login {
+                float: right;
+                font-size: 1em;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 18px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 10px;
+                background-color: #0A00FF;
+                color: #fff;
+            }
+
+                .header .btn-login:hover {
+                    background-color: #533AFF;
+                }
+
+        .header .logo {
+            float: left;
+            width: 56px;
+            height: 56px;
+            background: url('../images/logo.png') center center no-repeat;
+            font-size: 0px;
+            border-radius: 50%;
+        }
+
+        .banner {
+            margin-top: 2%;
+            width: 100%;
+            float: left;
+            text-align: center;
+            padding: 3% 4%;
+            background: linear-gradient(rgba(0,80,230,.5),rgba(0,80,230,.7)), url('../images/bannertest.png') no-repeat fixed;
+        }
+
+            .banner .title h2 {
+                font-size: 2.5em;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            .banner .title h3 {
+                font-size: 1.5em;
+                color: #FFFFFF;
+            }
+
+        .buttons {
+            width: 100%;
+            margin-top: 2%;
+        }
+
+            .buttons i {
+                float: right;
+            }
+
+        .btn-webplayer {
+            width: 100%;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            padding: 5%;
+            border-radius: 10px;
+            background-color: #FFDE3B;
+        }
+
+            .btn-webplayer:hover {
+                background-color: #FAD939;
+            }
+
+        .why {
+            margin-top: 4%;
+            width: 100%;
+            float: left;
+            text-align: center;
+            background-color: #F9F9F9;
+        }
+        .why h2 {
+            margin-bottom: 3%;
+        }
+
+        .why .answer {
+            background: url('images/png/check-6x.png') no-repeat;
+            margin-top:2%;
+            margin-right: 2%;
+            margin-bottom: 3%;
+            margin-left: 2%;
+            text-align:justify;
+            padding-left: 49px;
+            padding-right: 2%;
+            padding-bottom: 2%;
+        }
+
+        .why .answer  h3 {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .why h2 {
+            font-size: 2.5em;
+            color: #000;
+            font-weight: 700;
+
+        }
+
+        .why p {
+            color: #000;
+        }
+
+        .albums {
+            float: left;
+            width: 100%;
+            background-color: #CECECE;
+
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #2D49A6;
+            color: #FFF;
+            clear: both;
+            padding: 7% 7% 5% 7%;
+        }
+        .footer .logo {
+            float: left;
+            font-weight: bold;
+        }
+        .footer p {
+            clear: both;
+            padding-top: 5%;
+            text-align:center;
+        }
+        .social-icons a {
+            float: right;
+            font-size: 1.5em;
+            color: rgba(255,255,255,0.7);
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html"><h1 class="logo">Squash - Músicas descentralizadas.</h1></a>
+        <button class="btn-login">Login</button>
+    </header>
+    <div class="banner">
+
+            <div class="title">
+                <h2>Experimente!</h2>
+                <h3>Site de música totalmente gratuita.</h3>
+            </div>
+            <div class="buttons">
+                <button onclick="location.href='webplayer.html'" class="btn-webplayer">Web Player</button>
+            </div>
+    </div>
+    <section class="why">
+        <h2>Por que usar Squash?</h2>
+        <div class="answer">
+            <h3>É totalmente gratuito.</h3>
+            <p>Squash é uma plataforma de indexação e reprodutor de músicas descentralizadas visando máxima acessibilidade ao usuário sem qualquer cobrança de custo.</p>
+        </div>
+        <div class="answer">
+            <h3>Um mundo de música no seu bolso.</h3>
+            <p>Encontre músicas que você ama e também suas preferidas do passado, no meio de tantas faixas.</p>
+        </div>
+        <div class="answer">
+            <h3>Sem Wi-Fi? Sem problema!</h3>
+            <p>Com Squash, você pode baixar suas músicas e aproveitá-las.</p>
+        </div>
+        <div class="answer">
+            <h3>Crie a sua própria coleção.</h3>
+            <p>Crie playlists a partir de milhões de faixas, e leve todas com você onde quer que vá.</p>
+        </div>
+    </section>
+    <section class="albums">
+        <br />
+        <h2>Confira alguns álbuns</h2>
+        <br />&nbsp;<br />&nbsp;<br />
+        <p>Colocar depois que os metadados estiverem prontos.</p>
+        <br />&nbsp;
+        <br />&nbsp;
+        <br />&nbsp;
+    </section>
+    <footer class="footer">
+        <h1 class="logo">Squash 2019</h1>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="copyright">Sem direitos reservados.</p>
+    </footer>
+</body>
+</html>
