@@ -55,7 +55,7 @@ namespace WebSquash
                              routes.MapRoute(
                         name: "redirect",
                         template: "{controller=Redirect}/{action=Red}/{artist}/{album}/{track?}");
-
+                    
              */
             app.UseMvc(routes =>
             {
